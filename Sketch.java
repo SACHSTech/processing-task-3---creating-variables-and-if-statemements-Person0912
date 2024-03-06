@@ -1,8 +1,7 @@
 import processing.core.PApplet;
 
 /**
- * A program Sketch.java that draws a flower in the middle of a field
- * with clouds in the sky.
+ * A program Sketch.java that draws a flower in the middle of a field with randomized colours, positions, and size.
  * @author: Kayla Jin
  */
 
@@ -25,6 +24,7 @@ public class Sketch extends PApplet {
 
     // If statements to change the colours of the background and grass
     if (fltFlowerX < width / 2 && fltFlowerY < height * 3/8){
+      
       // Background colour
       background(117, 234, 255);
 
@@ -39,6 +39,7 @@ public class Sketch extends PApplet {
       rect(0, height * 325/400, width, height * 75/400);
     }
     else if (fltFlowerX >= width / 2 && fltFlowerY < height * 3/8){
+      
       // Background colour
       background(55, 198, 250);
 
@@ -53,6 +54,7 @@ public class Sketch extends PApplet {
       rect(0, height * 325/400, width, height * 75/400);
     }
     else if (fltFlowerX < width / 2 && fltFlowerY >= height * 3/8){
+      
       // Background colour
       background(171, 202, 255);
 
@@ -67,6 +69,7 @@ public class Sketch extends PApplet {
       rect(0, height * 325/400, width, height * 75/400);
     }
     else {
+      
       // Background colour
       background(148, 255, 228);
 
